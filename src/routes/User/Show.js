@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'dva';
 import BasicLayout from '../../components/Layout/BasicLayout';
 
-@connect(({ user, loading }) => ({
-  user,
-  loading: loading.models.user,
-}))
-export default class Show extends Component {
+
+class Show extends Component {
   state = {}
   componentDidMount() {
     this.props.dispatch({
@@ -26,3 +23,8 @@ export default class Show extends Component {
     );
   }
 }
+
+export default connect(({ user, loading }) => ({
+  user,
+  loading: loading.models.user,
+}))(Show);
