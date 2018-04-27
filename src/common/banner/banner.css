@@ -1,0 +1,23 @@
+:global(.space-carousel) {
+    padding: 16px;
+    background: #DEF1E5;
+    overflow: hidden;
+  }
+:global(.my-carousel .v-item) {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+  }
+:global(.sub-title) {
+    color: #888;
+    font-size: 14px;
+    padding: 30px 0 18px 0;
+  }
+:global(.banner){ width:15rem; overflow: hidden;}
+:global(.am-wingblank.am-wingblank-lg){
+    margin-left:0;
+    margin-right:0;
+}
+:global(.space-carousel){
+    background: none; width:15rem;
+}
